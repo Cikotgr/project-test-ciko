@@ -1,0 +1,23 @@
+
+
+.hero-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 1); /* Ganti dengan warna yang Anda inginkan */
+    clip-path: polygon(100% 60%, 0 100%, 100% 100%);
+}
